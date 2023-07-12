@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CF Stores</title>
-  <link rel="stylesheet" href="assests/User/css/styles.css">
+  <link rel="stylesheet" href="public/assests/User/css/styles.css">
 </head>
 
 <body>

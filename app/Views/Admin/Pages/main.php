@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="/assests/Admin/css/style.css">
+    <link rel="stylesheet" href="public/assests/Admin/css/style.css">
     <script src="https://kit.fontawesome.com/337ff70aea.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,7 +19,7 @@
         <div class="headerIcons">
             <i class="fas fa-bell"></i>
             <div class="account">
-                <img src="/assests/Image/avt.png" alt="">
+                <img src="public/assests/Image/avt.png" alt="">
                 <h4>Steven Vu</h4>
             </div>
         </div>
