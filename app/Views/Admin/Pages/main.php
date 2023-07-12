@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="<?=base_url()?>/public/assests/Admin/css/style.css">
+    <base href="<?= base_url() ?>">
+    <link rel="stylesheet" href="public/assests/Admin/css/style.css">
     <script src="https://kit.fontawesome.com/337ff70aea.js" crossorigin="anonymous"></script>
 </head>
 
@@ -173,9 +174,10 @@
                     </div>
                 </div>
                 <div class="pagination">
-                    <a href="#"><</a>
-                    <p>Page 1/2</p>
-                    <a href="#">></a>
+                    <a href="#">
+                        << /a>
+                            <p>Page 1/2</p>
+                            <a href="#">></a>
                 </div>
             </div>
         </div>

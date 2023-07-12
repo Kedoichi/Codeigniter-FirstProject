@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authentication</title>
 
-    <link rel="stylesheet" href="<?=base_url()?>/public/assests/Admin/css/auth.css">
+    <base href="<?= base_url() ?>">
+    <link rel="stylesheet" href="public/assests/Admin/css/auth.css">
 
 </head>
 
@@ -63,7 +64,7 @@
 
     <script>
         document.querySelector('.msgBtn').addEventListener('click', function () {
-            
+
             document.querySelector('.cont').classList.toggle('statIsUp');
         });
     </script>
