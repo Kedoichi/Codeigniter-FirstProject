@@ -1,5 +1,12 @@
 <?php
 
+// Run the composer update command
+exec('composer update');
+sleep(1);
+// Run the php spark serve command
+exec('php spark serve');
+
+
 // Check PHP version.
 $minPhpVersion = '7.4'; // If you update this, don't forget to update `spark`.
 if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
