@@ -20,7 +20,7 @@
             <i class="fas fa-bell"></i>
             <div class="account">
                 <img src="/assests/Image/avt.png" alt="">
-                <h4>Jhon Viek</h4>
+                <h4>Steven Vu</h4>
             </div>
         </div>
     </header>
