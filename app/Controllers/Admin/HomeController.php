@@ -6,6 +6,9 @@ class HomeController extends BaseController
 {
     public function index()
     {
-        return view('Admin/main');
+        $data=[];
+        $data = $this->loadMasterLayout($data,'Dashboard','home');
+
+        return view('Admin/main',$data);
     }
 }
