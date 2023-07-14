@@ -174,8 +174,7 @@
                     </div>
                 </div>
                 <div class="pagination">
-                    <a href="#">
-                        << /a>
+                    <a href="#"><</a>
                             <p>Page 1/2</p>
                             <a href="#">></a>
                 </div>
