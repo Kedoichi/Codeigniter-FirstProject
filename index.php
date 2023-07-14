@@ -1,5 +1,6 @@
 <?php
 //
+echo exec("pwd");
 // Run composer update
 $composerCommand = 'composer update';
 exec($composerCommand);
