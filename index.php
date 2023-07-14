@@ -1,13 +1,4 @@
 <?php
-//
-echo exec("pwd");
-// Run composer update
-$composerCommand = 'composer update';
-exec($composerCommand);
-
-// Run php spark serve
-$sparkServeCommand = 'php spark serve';
-exec($sparkServeCommand);
 // Check PHP version.
 $minPhpVersion = '7.4'; // If you update this, don't forget to update `spark`.
 if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
