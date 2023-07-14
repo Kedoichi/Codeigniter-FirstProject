@@ -29,8 +29,11 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'User\HomeController::index');
 $routes->group('admin', function ($routes) {
-    $routes->get('home', 'Admin\HomeController::index');
+    $routes->get('/', 'Admin\HomeController::index');
     $routes->get('login', 'Admin\LoginController::index');
+    $routes->get('employee', 'Admin\EmployeeController::index');
+    $routes->get('document', 'Admin\DocumentController::index');
+    $routes->get('signout', 'Admin\SignOutController::index');
 
 });
 
