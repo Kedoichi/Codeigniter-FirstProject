@@ -128,3 +128,4 @@ nb-configuration.xml
 # Composer
 composer.json
 composer.lock
+composer.lock
