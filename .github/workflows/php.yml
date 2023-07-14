@@ -20,9 +20,6 @@ jobs:
       - name: Composer update
         run: composer update
 
-      - name: serve spark
-        run: php spark serve
-
     # - name: Validate composer.json and composer.lock
     #   run: composer validate --strict
 
