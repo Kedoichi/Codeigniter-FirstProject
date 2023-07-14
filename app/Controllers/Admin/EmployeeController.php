@@ -54,6 +54,19 @@ class EmployeeController extends BaseController
     public function deleteEmployee()
     {
         $result = $this->service->deleteEmployee($this->request);
-        return redirect()->to('/admin/employee');
+        $data = [];
+        $dataLayout['employees'] = $this->service->deleteEmployee($this->request);
+        $css = [];
+        $js = [
+            'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">',
+
+            base_url() . 'public/assests/Admin/js/employee.js'
+        ];
+
+        // Pass dataLayout to the loadMasterLayout method
+        $data = $this->loadMasterLayout($data, $dataLayout, 'Employee', 'employee', $css, $js);
+
+        // Return the updated view
+        return view('Admin/main', $data);
     }
 }

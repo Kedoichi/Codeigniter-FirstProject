@@ -36,6 +36,7 @@ class EmployeeService extends BaseServices
         $id = $requestData->getPost('id');
         try {
             $this->employee->delete($id);
+            return $this->employee->findAll();
         } catch (\Exception $e) {
             return $e->getMessage();
         }
