@@ -27,13 +27,37 @@
     </div>
 
 
-    <div class="storeList">
-        Todo: create employee page
+    <div class="employeeList">
+        <?php foreach ($employees as $employee) : ?>
+            <div class="employeeCard">
+                <div class="picture">
+                    <i class="fa-sharp fa-solid fa-3x fa-user"></i>
+                </div>
+                <div class="detail">
+                    <div class='employeeName'><?= $employee['name'] ?></div>
+                    <div class='employeeDes'>
+                        <p><?= $employee['phone'] ?></p>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="document">
+                        <i class="fa-regular fa-2x fa-folder"></i>
+                        <p>Documents</p>
+                    </div>
+                    <div class="tools">
+                        <div class="edit">
+                            <i class="fa-solid fa-1x fa-pen"></i>
+                        </div>
+
+                        <div class="delete"data-id="<?= $employee['id'] ?>">
+                            <i class="fa-regular fa-1x fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach ?>
+
+        <div class="pagination">
+            <!-- <a href="#"><</a> <p>Page 1/2</p> <a href="#">></a> -->
+        </div>
     </div>
-    <div class="pagination">
-        <a href="#">
-                <a href="#"><</a>
-                <p>Page 1/2</p>
-                <a href="#">></a>
-    </div>
-</div>

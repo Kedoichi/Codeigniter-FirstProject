@@ -1,14 +1,19 @@
 <?php
 
 namespace App\Controllers\Admin;
+
 use App\Controllers\BaseController;
+
 class DocumentController extends BaseController
 {
     public function index()
     {
-        $data=[];
-        $data = $this->loadMasterLayout($data,'Document','document');
+        $data = [];
+        $dataLayout = [];
+        $css = [];
+        $js = [];
+        $data = $this->loadMasterLayout($data, $dataLayout, 'Document', 'document', $css, $js);
 
-        return view('Admin/main',$data);
+        return view('Admin/main', $data);
     }
 }

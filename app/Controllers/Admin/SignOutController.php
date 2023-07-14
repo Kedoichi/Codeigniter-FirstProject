@@ -1,14 +1,20 @@
 <?php
 
 namespace App\Controllers\Admin;
+
 use App\Controllers\BaseController;
+
 class SignOutController extends BaseController
 {
     public function index()
     {
-        $data=[];
-        $data = $this->loadMasterLayout($data,'Sign Out','signOut');
+        $data = [];
+        $dataLayout = [];
+        $data = [];
+        $css = [];
+        $js = [];
+        $data = $this->loadMasterLayout($data, $dataLayout, 'Sign Out', 'signOut', $css, $js);
 
-        return view('Admin/main',$data);
+        return view('Admin/main', $data);
     }
 }

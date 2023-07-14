@@ -32,6 +32,11 @@ $routes->group('admin', function ($routes) {
     $routes->get('/', 'Admin\HomeController::index');
     $routes->get('login', 'Admin\LoginController::index');
     $routes->get('employee', 'Admin\EmployeeController::index');
+    $routes->group('employee', function ($routes) {
+        $routes->get('add', 'Admin\EmployeeController::addEmployee');
+        $routes->post('insert', 'Admin\EmployeeController::insertEmployee');
+        $routes->post('delete', 'Admin\EmployeeController::deleteEmployee');
+    });
     $routes->get('document', 'Admin\DocumentController::index');
     $routes->get('signout', 'Admin\SignOutController::index');
 

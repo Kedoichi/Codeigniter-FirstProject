@@ -135,6 +135,7 @@ nav {
   padding: 6px 20px;
   z-index: 2;
 }
+
 .storeHeader .add {
   width: 30%;
 }
@@ -165,10 +166,16 @@ nav {
   text-align: center;
   direction: ltr;
 }
-.storeList {
+.storeList,
+.employeeList,
+.docList {
   height: 100%;
 }
-.storeCard {
+.employeeName {
+  font-weight: bold;
+}
+.storeCard,
+.employeeCard {
   position: relative;
   background-color: #c8b6a6;
   color: #1a120b;
@@ -183,12 +190,14 @@ nav {
   text-align: center;
 }
 
-.storeCard .picture {
+.storeCard,
+.employeeCard .picture {
   flex: 1;
   padding: 10px;
 }
 
-.storeCard .detail {
+.storeCard,
+.employeeCard .detail {
   text-align: left;
   flex: 12;
   padding: 10px;
@@ -201,7 +210,48 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+.employeeCard .button {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 
+.storeCard .button .tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.employeeCard .button .tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.storeCard,
+.employeeCard .button .tools div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.employeeCard .button .tools div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+.storeCard,
+.employeeCard .button .tools div:hover {
+  background-color: #a4907c;
+}
 .pagination {
   display: flex;
   justify-content: center;
