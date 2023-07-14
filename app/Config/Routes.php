@@ -34,6 +34,7 @@ $routes->group('admin', function ($routes) {
     $routes->get('employee', 'Admin\EmployeeController::index');
     $routes->group('employee', function ($routes) {
         $routes->get('add', 'Admin\EmployeeController::addEmployee');
+        $routes->get('confirmDelete', 'Admin\EmployeeController::addEmployee');
         $routes->post('insert', 'Admin\EmployeeController::insertEmployee');
         $routes->post('delete', 'Admin\EmployeeController::deleteEmployee');
     });
